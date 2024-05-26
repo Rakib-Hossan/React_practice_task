@@ -1,10 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import GoogleLogIn from "../components/auth/GoogleLogIn";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../firebase/firebaseConfig";
+import { useEffect } from "react";
 
 export default function Login() {
-  return (
+ 
+    const navigate = useNavigate();
+    const [user] = useAuthState(auth);
+
+    useEffect(()=>{
+        if(user){
+            navigate('/')
+        }
+    },[navigate,user]);
+ 
+    return (
     <div>
-        <h1 className=" text-3xl md:text-5xl font-bold text-center py-4">Login now!</h1>
-        <div className="hero min-h-screen ">
+        <h1 className=" text-3xl md:text-4xl font-bold text-center py-4 text-violet-600">Login now!</h1>
+        <div className="hero ">
             <div className="hero-content flex-col gap-8 md:gap-24 lg:flex-row-reverse justify-between">
                 <div className="text-center lg:text-left flex-1">
                     <img src="https://i.ibb.co/VV6Kgv3/img2.jpg" />
@@ -28,6 +42,10 @@ export default function Login() {
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
+                        </div>
+                        <div>
+                            <h3 className="my-4 text-center text-violet-400 text-xl font-semibold">Login with</h3>
+                            <GoogleLogIn />
                         </div>
                         <div>
                         <label className="label">
