@@ -15,6 +15,8 @@ export default function Register() {
     const [createUserWithEmailAndPassword,user,loading,error] = useCreateUserWithEmailAndPassword(auth); 
 
     const[passMatch, setPassMatch] = useState(true);
+    const[message, setMessage] = useState('');
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -30,22 +32,22 @@ export default function Register() {
         }
         
         if(password === confirmPassword){
-            createUserWithEmailAndPassword(email,password,confirmPassword)
-            console.log(email,password,confirmPassword);
+            setMessage(
+                <div role="alert" className="alert alert-success mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>Successfully registered!</span>
+                </div>
+            );
+            createUserWithEmailAndPassword(email,password,confirmPassword);
         }
     }
     
-
-// let from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
     if (userInfo) {
       navigate("/");
     }
-    if(error){
-        console.log(error?.message);
-    }
-  }, [userInfo, navigate,error]);
+  }, [userInfo, navigate]);
 
   return (
     <div>
@@ -74,13 +76,21 @@ export default function Register() {
                             <input type="password" name="confirm_password" placeholder="password" className="input input-bordered" required />
                         </div>
                         {!passMatch && (
-                                <div className="my-2">
-                                    <p className="text-red-500">Passwords do not match!</p>
-                                </div>
+                                <div role="alert" className="alert alert-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span>Password do not match!!</span>
+                            </div>
                                 )}
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
+                            {message && <p>{message}</p>}
                         </div>
+
+                        {error && <div role="alert" className="alert alert-error">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    <span>Email are already registered.</span>
+                                </div>}
+
                         <div>
                             <h3 className="my-4 text-center text-violet-400 text-xl font-semibold">Register with</h3>
                             <GoogleLogIn />
