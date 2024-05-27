@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import DashLayout from "../layout/DashLayout";
 import PrivateRoutes from "./PrivateRoutes";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path:'register',
                 element: <Register />
+            },
+            {
+                path:'about',
+                element: <About />
             },
         ]
       },
