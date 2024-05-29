@@ -24,11 +24,11 @@ export default function DashLayout() {
                 </div> 
                 <div className="drawer-side ">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label> 
-                    <ul className="menu p-4 w-80 min-h-screen bg-base-200 text-black font-semibold flex flex-col justify-between">
+                    <ul className="menu p-4 w-60 min-h-screen bg-base-200 text-black font-semibold flex flex-col justify-between">
                     {/* Sidebar content here */}
                     <div>
-                      <li><a>Users</a></li>
-                      <li><a>Products</a></li>
+                      <li><a>Dashboard</a></li>
+                      <li><a>Manage Products</a></li>
                       <li><a>Add Product</a></li>
                     </div>
                     <div>

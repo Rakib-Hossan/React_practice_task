@@ -1,0 +1,145 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Aarong Premium Panjabi",
+        "price": 4500,
+        "tagline": "Embrace Tradition with Aarong's Elegantly Crafted Premium Panjabi Collection.",
+        "description": "Discover the timeless elegance of Aarong Premium Panjabi, meticulously crafted for the discerning gentleman. Our collection features exquisite designs, luxurious fabrics, and unparalleled craftsmanship. Perfect for any occasion, Aarong Premium Panjabi offers both comfort and style, ensuring you stand out with sophistication. Elevate your wardrobe with our exclusive selection today.",
+        "image": "https://i.ibb.co/fQ46WYJ/aarong-panjabi.png",
+        "category": "Panjabi"
+      },
+      {
+        "id": "2",
+        "title": "Aarong Premium Shirt",
+        "price": 1599,
+        "tagline": "Experience elegance with Aarong's premium, meticulously crafted shirts.",
+        "description": "Discover the pinnacle of sophistication with Aarong Premium Shirts. Expertly crafted from the finest materials, these shirts offer unparalleled comfort and style. Perfect for both formal occasions and casual outings, Aarong Premium Shirts ensure you always make a lasting impression. Elevate your wardrobe with timeless elegance and superior quality.",
+        "image": "https://i.ibb.co/k3P2vxZ/aarong-shirt.png",
+        "category": "Shirt"
+      },
+      {
+        "id": "3",
+        "title": "Aarong Premium T-shirt",
+        "price": 899,
+        "tagline": "Elevate casual comfort with Aarong's premium, stylish T-shirts.",
+        "description": "Experience ultimate comfort and style with Aarong Premium T-Shirts. Made from the highest quality materials, these T-shirts offer a perfect blend of softness and durability. Ideal for everyday wear, they ensure you look effortlessly chic. Upgrade your casual wardrobe with the timeless appeal of Aarong Premium T-Shirts.",
+        "image": "https://i.ibb.co/cYYMyZ7/aarong-t-shirt.png",
+        "category": "T-shirt"
+      },
+      {
+        "id": "4",
+        "title": "Catseye Premium Panjabi",
+        "price": 4199,
+        "tagline": "Exude elegance and tradition with Catseye's premium Panjabis.",
+        "description": "Step into tradition with Catseye Premium Panjabis. Crafted from luxurious fabrics, these Panjabis offer unmatched comfort and timeless style. Perfect for festive occasions and cultural celebrations, each piece showcases exquisite craftsmanship. Elevate your ethnic wardrobe with the elegance and sophistication of Catseye Premium Panjabis.",
+        "image": "https://i.ibb.co/DLqcNS2/catseye-panjabi.jpg",
+        "category": "Panjabi"
+      },
+      {
+        "id": "5",
+        "title": "Catseye Premium shirt",
+        "price": 1499,
+        "tagline": "Redefine sophistication with Catseye's premium, expertly tailored shirts.",
+        "description": "Indulge in luxury with Catseye Premium Shirts. Meticulously tailored from finest fabrics, these shirts epitomize elegance and comfort. Versatile for formal affairs or casual outings, each shirt exudes timeless charm. Elevate your wardrobe with Catseye's signature craftsmanship and elevate your style effortlessly, wherever you go.",
+        "image": "https://i.ibb.co/6W75jzy/catseye-shirt.jpg",
+        "category": "Shirt"
+      },
+      {
+        "id": "6",
+        "title": "Catseye Premium T-shirt",
+        "price": 999,
+        "tagline": "Experience comfort and style in Catseye's premium, versatile t-shirts.",
+        "description": "Discover everyday luxury with Catseye Premium T-shirts. Crafted from superior fabrics, these shirts offer unparalleled comfort and durability. Whether for casual outings or relaxed weekends, Catseye ensures you look effortlessly stylish. Elevate your wardrobe essentials with the perfect blend of comfort and sophistication, courtesy of Catseye Premium T-shirts.",
+        "image": "https://i.ibb.co/K27nvbp/catseye-t-shirt.jpg",
+        "category": "T-shirt"
+      },
+      {
+        "id": "7",
+        "title": "Bata Men's Formal Shoe",
+        "price": 2899,
+        "tagline": "Elevate your stride with Bata's sleek and sophisticated formal shoes.",
+        "description": "Step into confidence with Bata Men's Formal Shoes. Meticulously crafted for impeccable style and comfort, these shoes are the epitome of sophistication. Whether it's the boardroom or a special occasion, Bata ensures you make a lasting impression with every step. Elevate your formal attire with Bata's timeless elegance.",
+        "image": "https://i.ibb.co/yyJbPg4/bata-formal.png",
+        "category": "Formal Shoe"
+      },
+      {
+        "id": "8",
+        "title": "Bata Men's Sport shoe",
+        "price": 2399,
+        "tagline": "Unleash performance and style with Bata's dynamic sport shoes.",
+        "description": "Elevate your game with Bata Men's Sport Shoes. Engineered for performance and style, these shoes offer unparalleled comfort and support. Whether you're hitting the gym, the track, or the streets, Bata ensures you stay ahead with every step. Experience the perfect blend of athleticism and fashion with Bata.",
+        "image": "https://i.ibb.co/yFhFLN8/bata-sport.png",
+        "category": "Sport Shoe"
+      },
+      {
+        "id": "9",
+        "title": "Bata Man's Sandal",
+        "price": 1299,
+        "tagline": "Embrace comfort and style with Bata's versatile men's sandals.",
+        "description": "Experience laid-back luxury with Bata Men's Sandals. Designed for comfort and durability, these sandals are perfect for casual strolls or beachside adventures. Crafted from high-quality materials, each pair ensures lasting wearability without compromising on style. Elevate your summer wardrobe with the effortless charm of Bata Men's Sandals.",
+        "image": "https://i.ibb.co/5rx9Xtv/bata-sandal.png",
+        "category": "Sandal"
+      },
+      {
+        "id": "10",
+        "title": "Apex Men's Formal Shoe",
+        "price": 3599,
+        "tagline": "Step into success with Apex's sophisticated and elegant formal shoes.",
+        "description": 
+        "Elevate your professional attire with Apex Men's Formal Shoes. Impeccably crafted for style and comfort, these shoes exude sophistication. Whether it's the boardroom or a formal event, Apex ensures you make a lasting impression. Step confidently into success with the timeless elegance of Apex Men's Formal Shoes.",
+        "image": "https://i.ibb.co/bBP6jBK/apex-formal.png",
+        "category": "Formal Shoe"
+      },
+      {
+        "id": "11",
+        "title": "Apex Men's Sport shoe",
+        "price": 2899,
+        "tagline": "Maximize performance with Apex's dynamic and versatile sport shoes.",
+        "description": "Elevate your athletic prowess with Apex Men's Sport Shoes. Engineered for peak performance and durability, these shoes provide superior support and comfort. Whether you're on the court, track, or trail, Apex ensures you stay ahead of the competition. Experience the perfect fusion of style and functionality with Apex.",
+        "image": "https://i.ibb.co/LSXjpRz/apex-sport.png",
+        "category": "Sport Shoe"
+      },
+      {
+        "id": "12",
+        "title": "Apex Man's Sandal",
+        "price": 1299,
+        "tagline": "Experience comfort and style with Apex's versatile men's sandals.",
+        "description": "Elevate your casual look with Apex Men's Sandals. Crafted for comfort and durability, these sandals are perfect for leisurely strolls or beach outings. Designed with high-quality materials, each pair ensures lasting wearability without compromising style. Step into summer with confidence and style with Apex Men's Sandals.",
+        "image": "https://i.ibb.co/vP35RjY/apex-Sandal.png",
+        "category": "Sandal"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Panjabi",
+        "image": "https://i.ibb.co/f97TB8C/panjabi.jpg",
+        "id": "2314"
+      },
+      {
+        "title": "Shirt",
+        "image": "https://i.ibb.co/7jSPcZ8/formal-Shirt.jpg",
+        "id": "8569"
+      },
+      {
+        "title": "T-shirt",
+        "image": "https://i.ibb.co/QDbZ0fk/t-shirt.jpg",
+        "id": "5680"
+      },
+      {
+        "title": "Formal Shoe",
+        "image": "https://i.ibb.co/Yff8W97/formal-Shoe.jpg",
+        "id": "e23f"
+      },
+      {
+        "title": "Sport Shoe",
+        "image": "https://i.ibb.co/YTVtTpQ/sprot-Shoe.jpg",
+        "id": "970b"
+      },
+      {
+        "title": "Sandal",
+        "image": "https://i.ibb.co/9n87FrF/sandal.jpg",
+        "id": "b069"
+      }
+    ]
+  }

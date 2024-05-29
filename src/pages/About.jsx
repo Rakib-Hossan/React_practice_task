@@ -13,7 +13,7 @@ export default function About() {
             </div>
         </div>
 
-        <div className=" p-5 md:p-20 mx-auto flex flex-col md:flex-row gap-12 ">
+        <div className=" hero-content p-12 mx-auto flex flex-col md:flex-row gap-12 ">
             <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-violet-600">Our Values</h4>
                     <ul>
