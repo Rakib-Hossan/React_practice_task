@@ -14,7 +14,7 @@ export default function Category() {
   return (
     <div>
       <h3 className="text-center text-3xl font-bold py-10 text-violet-600">Categories</h3>
-        <div className="grid md:grid-cols-3 gap-10 px-6 justify-center items-center">
+        <div className="grid  grid-cols-2 md:grid-cols-3 gap-5 px-6 justify-center items-center">
         {
                 categories?.map(category=><CategoriesCard key={category?.id} category={category}/>)
             }

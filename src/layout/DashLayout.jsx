@@ -17,7 +17,6 @@ export default function DashLayout() {
         <div className="drawer lg:drawer-open">
                     <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center">
-                    {/* Page content here */}
                     <Outlet />
                     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
                 
@@ -27,9 +26,9 @@ export default function DashLayout() {
                     <ul className="menu p-4 w-60 min-h-screen bg-base-200 text-black font-semibold flex flex-col justify-between">
                     {/* Sidebar content here */}
                     <div>
-                      <li><a>Dashboard</a></li>
-                      <li><a>Manage Products</a></li>
-                      <li><a>Add Product</a></li>
+                      <li><Link to={"/dashboard"}>Dashboard</Link></li>
+                      <li><Link to={"/dashboard/manage-products"}>Manage Products</Link></li>
+                      <li><Link to={"/dashboard/add-products"}>Add Product</Link></li>
                     </div>
                     <div>
                       <li><Link to={"/"} className='mb-3'>Back to Home</Link></li>

@@ -6,7 +6,10 @@ import Register from "../pages/Register";
 import DashLayout from "../layout/DashLayout";
 import PrivateRoutes from "./PrivateRoutes";
 import About from "../pages/About";
-import Allproducts from "../components/products/Allproducts";
+import DashboardHome from "../dashboard/DashboardHome";
+import ManageProducts from "../dashboard/ManageProducts";
+import AddProduct from "../dashboard/AddProduct";
+import Products from "../pages/Products";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'products',
-                element: <Allproducts />
+                element: <Products />
             },
         ]
       },
@@ -43,7 +46,20 @@ const router = createBrowserRouter([
                 <DashLayout/>
             </PrivateRoutes>
         ),
-
+        children :[
+            {
+                index: true, 
+                element : <DashboardHome/>
+            },
+            {
+                path:'manage-products',
+                element: <ManageProducts />
+            },
+            {
+                path:'add-products',
+                element: <AddProduct />
+            },
+        ]
     }
 
 ])
