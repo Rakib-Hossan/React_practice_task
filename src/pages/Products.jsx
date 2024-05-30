@@ -9,12 +9,17 @@ export default function Products() {
         .then((res)=> res.json())
         .then((data) => setProducts(data));
     },[]); 
+
+    const handleDeleteProduct = (id) => {
+        setProducts(products.filter((product)=>product.id!==id));
+    };
+
   return (
     <div>
         <h2 className="text-center text-3xl font-bold text-violet-600 py-5">Our Products</h2>
         <div className="grid md:grid-cols-3 gap-10 px-36 justify-center items-center mx-auto">
             {
-                products?.map(product=><SingleProducts key={product?.id} product={product}/>)
+                products?.map(product=><SingleProducts key={product?.id} product={product} onDelete={handleDeleteProduct}/>)
             }
         </div>
     </div>

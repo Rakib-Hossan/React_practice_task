@@ -15,7 +15,8 @@ export default function Allproducts() {
     <div className="px-40">
         <div className="grid md:grid-cols-3 gap-10 px-6 justify-center items-center">
             {
-                products?.slice(0,6)?.map(product=><SingleProducts key={product?.id} product={product}/>)
+                products?.reverse()?.slice(0,6)?.map(product=><SingleProducts key={product?.id} product={product}/>)
+                
             }
         </div>
     </div>

@@ -11,6 +11,9 @@ export default function ManageProducts() {
         .then((data) => setProducts(data));
     },[]);
 
+    const handleDeleteProduct = (id) => {
+      setProducts(products.filter((product)=>product.id!==id));
+  };
 
   return (
     <div className="overflow-x-auto w-[80%] py-5">
@@ -29,7 +32,7 @@ export default function ManageProducts() {
       
     {
 
-        products?.map((product)=>(<ProductTable key={product?.id} product={product}/>))
+        products?.map((product)=>(<ProductTable key={product?.id} product={product} onDelete={handleDeleteProduct}/>))
 
     }
 

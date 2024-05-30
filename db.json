@@ -107,24 +107,6 @@
       "description": "Elevate your casual look with Apex Men's Sandals. Crafted for comfort and durability, these sandals are perfect for leisurely strolls or beach outings. Designed with high-quality materials, each pair ensures lasting wearability without compromising style. Step into summer with confidence and style with Apex Men's Sandals.",
       "image": "https://i.ibb.co/vP35RjY/apex-Sandal.png",
       "category": "Sandal"
-    },
-    {
-      "id": "data ",
-      "title": "data ",
-      "price": "1254",
-      "tagline": "this is best",
-      "description": "lorem ipsum",
-      "category": "Formal Shoe",
-      "image": ""
-    },
-    {
-      "id": "richman",
-      "title": "richman",
-      "price": "1458",
-      "tagline": "this is best",
-      "description": "lorem ",
-      "category": "Panjabi",
-      "image": "https://sailors3bucket1.s3.ap-southeast-1.amazonaws.com/uploads/all/iwa242mFpSCv5GeqSvZT9SFHBRomnXx8qklBAxhK.jpg"
     }
   ],
   "categories": [

@@ -10,7 +10,7 @@ export default function Home() {
         <Banner />
         <div>
           <Category />
-          <h2 className="text-2xl font-bold text-center py-5">Our <span className="text-violet-600">Top Selling</span> Products</h2>
+          <h2 className="text-2xl font-bold text-center py-5">Our <span className="text-violet-600">New arrival!!</span> Products</h2>
         <Allproducts/>
         </div>
     </div>

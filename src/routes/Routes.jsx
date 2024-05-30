@@ -10,6 +10,8 @@ import DashboardHome from "../dashboard/DashboardHome";
 import ManageProducts from "../dashboard/ManageProducts";
 import AddProduct from "../dashboard/AddProduct";
 import Products from "../pages/Products";
+import ProductInfo from "../components/products/ProductInfo";
+import EditProduct from "../dashboard/EditProduct";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,11 @@ const router = createBrowserRouter([
                 index:true,
                 element: <Home />,
                 loader: () => fetch('http://localhost:3000/products')
+            },
+            {
+                path:'/products/:id',
+                element: <ProductInfo />,
+                loader: ({params}) => fetch(`http://localhost:3000/products/${params?.id}`)
             },
             {
                 path:'login',
@@ -58,6 +65,10 @@ const router = createBrowserRouter([
             {
                 path:'add-products',
                 element: <AddProduct />
+            },
+            {
+                path:'edit-products/:id',
+                element: <EditProduct />
             },
         ]
     }
