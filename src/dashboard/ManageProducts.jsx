@@ -9,7 +9,8 @@ export default function ManageProducts() {
         fetch('http://localhost:3000/products')
         .then((res)=> res.json())
         .then((data) => setProducts(data));
-    },[])
+    },[]);
+
 
   return (
     <div className="overflow-x-auto w-[80%] py-5">
@@ -21,6 +22,7 @@ export default function ManageProducts() {
         <th>Title</th>
         <th>Category</th>
         <th>Price</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
